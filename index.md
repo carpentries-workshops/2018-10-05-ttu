@@ -208,7 +208,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <h2 id="schedule">Schedule</h2>
 
 {% if page.carpentry == "swc" %}
-  {% include sc/schedule.html %}
+  {% include _includes/sc/schedule.html %}
 {% elsif page.carpentry == "dc" %}
   {% include dc/schedule.html %}
 {% elsif page.carpentry == "lc" %}
@@ -253,7 +253,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <h2 id="syllabus">Syllabus</h2>
 
 {% if page.carpentry == "swc" %}
-  {% include sc/syllabus.html %}
+  {% include _includes/sc/syllabus.html %}
 {% elsif page.carpentry == "dc" %}
   {% include dc/syllabus.html %}
 {% elsif page.carpentry == "lc" %}
