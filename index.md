@@ -208,7 +208,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <h2 id="schedule">Schedule</h2>
 
 {% if page.carpentry == "swc" %}
-  {% include schedule.html %}
+  {% include sc/schedule.html %}
 {% elsif page.carpentry == "dc" %}
   {% include dc/schedule.html %}
 {% elsif page.carpentry == "lc" %}
@@ -253,7 +253,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <h2 id="syllabus">Syllabus</h2>
 
 {% if page.carpentry == "swc" %}
-  {% include syllabus.html %}
+  {% include sc/syllabus.html %}
 {% elsif page.carpentry == "dc" %}
   {% include dc/syllabus.html %}
 {% elsif page.carpentry == "lc" %}
@@ -505,7 +505,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   </div>
 </div> {% comment %} End of 'editor' section. {% endcomment %}
 
-{% comment %}
 <div id="python"> {% comment %} Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
            the Jupyter notebook.
@@ -599,6 +598,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 {% endcomment %}
 </div> {% comment %} End of 'Python' section. {% endcomment %}
 
+{% comment %}
 <div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
   <h3>R</h3>
 
